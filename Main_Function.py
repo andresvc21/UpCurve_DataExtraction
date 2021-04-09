@@ -367,7 +367,7 @@ def stages_function(well):
     :param well: well in the loop from the user
     :return: data frame with number of stages
     """
-
+    #TODO! Tunning CODE!
     data = pd.read_csv("E:/Personal/ASME/TEST/Info_To_HEEDS.csv")
     stages=data.loc[data["API"] == well, "Stage"]
     API = data.loc[data["API"] == well, "API"]
@@ -381,7 +381,7 @@ def breakdownpressure_function(well):
     :param well: well in the loop from the user
     :return: data frame with data for breakdownpressure in [psi]
     """
-
+    #TODO! Tunning CODE!
     data = pd.read_csv("E:/Personal/ASME/TEST/Info_To_HEEDS.csv")
     breakdownpressure=data.loc[data["API"] == well, "Breakdown Pressure (psi)"]
     # print(breakdownpressure)
